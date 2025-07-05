@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arka Braja Prasad Nath - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>Arka Nath</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">My Portfolio</h2>
+                <p class="lead">Explore my recent projects and achievements in software development, AI, and design</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="text-center mb-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="app">Mobile Apps</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="ai">AI & ML</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="graphic">Graphic Design</button>
+                </div>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="row g-4 portfolio-grid">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="app">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images\screen-0.jpg" class="card-img-top" alt="Android Ball Bounce Game">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Android Ball Bounce Game</h5>
+                                    <p class="text-white">A fun Android game built with Unity where a ball bounces off walls and a moving paddler.</p>
+                                    <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Android Ball Bounce Game</h5>
+                            <p class="card-text text-muted">Mobile App</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="ai">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.prismic.io/turing/652ec640fbd9a45bcec819fd_AI_Powered_Virtual_Assistant_c6d268785b.webp?auto=format,compress" class="card-img-top" alt="AI Chatbot">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Virtual AI Assistant</h5>
+                                    <p class="text-white">A chatbot using LLaMA 3 API to assist users with medical queries.</p>
+                                    <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual AI Assistant</h5>
+                            <p class="card-text text-muted">AI & ML</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="ai">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://www.muvi.com/wp-content/uploads/2022/04/Music-recommendation-system-%E2%80%93-Revolutionizing-Music-streaming-industry.jpg" class="card-img-top" alt="Music Recommendation System">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Music Recommendation System</h5>
+                                    <p class="text-white">A system using NLP to recommend music based on user preferences.</p>
+                                    <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Music Recommendation System</h5>
+                            <p class="card-text text-muted">AI & ML</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="ai">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*EfsYA-ZGpzg8C0ojz88u6g.png" class="card-img-top" alt="Plant Disease Detection App">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Plant Disease Detection App</h5>
+                                    <p class="text-white">A beginner-level app to detect plant diseases like corn rust and tomato bacterial spot.</p>
+                                    <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#project4Modal">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Plant Disease Detection App</h5>
+                            <p class="card-text text-muted">AI & ML</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="app">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://media.licdn.com/dms/image/v2/D5612AQH_XEW7eiTz7w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1693540754945?e=2147483647&v=beta&t=hgjkLURDcYu57k4R-SjIen9bXNNXzK_S-JvOoijxONQ" class="card-img-top" alt="Bookstore App">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Bookstore Inventory Manager</h5>
+                                    <p class="text-white">A Windows Forms app for managing bookstore inventory with SQL Server backend.</p>
+                                    <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#project5Modal">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bookstore Inventory Manager</h5>
+                            <p class="card-text text-muted">Mobile App</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/hackathon-flyer-design-template-4fc2cfe7a4d4b3913e5192047a0bb29d_screen.jpg?ts=1709877074" class="card-img-top" alt="Hackathon Poster">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Hackathon Poster</h5>
+                                    <p class="text-white">Poster design for an annual university hackathon using Adobe Illustrator.</p>
+                                    <a href="#" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#project6Modal">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hackathon Poster</h5>
+                            <p class="card-text text-muted">Graphic Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Android Ball Bounce Game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/random/800x500/?game" class="img-fluid mb-4" alt="Android Ball Bounce Game">
+                    <p>A fun Android game where a ball bounces off walls and a moving paddler. Missing the paddler results in game over.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Simple yet engaging gameplay</li>
+                        <li>Responsive paddler controls</li>
+                        <li>Real-time collision detection</li>
+                    </ul>
+                    <p><strong>Technologies used:</strong> Unity Game Engine, C#</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/AriyaArKa">View on GitHub</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Virtual AI Assistant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/random/800x500/?chatbot" class="img-fluid mb-4" alt="AI Chatbot">
+                    <p>A virtual AI assistant (doctor) built as a chat app using the LLaMA 3 API to assist users with medical queries.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Conversational AI for medical queries</li>
+                        <li>Integration with LLaMA 3 API</li>
+                        <li>User-friendly interface</li>
+                    </ul>
+                    <p><strong>Technologies used:</strong> Python, LLaMA 3 API</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/AriyaArKa">View on GitHub</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Music Recommendation System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/random/800x500/?music" class="img-fluid mb-4" alt="Music Recommendation System">
+                    <p>A music recommendation system leveraging NLP to suggest songs based on user preferences and behavior.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>NLP-based recommendation engine</li>
+                        <li>User preference analysis</li>
+                        <li>Scalable architecture</li>
+                    </ul>
+                    <p><strong>Technologies used:</strong> Python, SpaCy, NLTK</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/AriyaArKa">View on GitHub</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 4 -->
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Plant Disease Detection App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/random/800x500/?agriculture" class="img-fluid mb-4" alt="Plant Disease Detection App">
+                    <p>A beginner-level app to detect plant diseases like corn rust, potato early blight, and tomato bacterial spot.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Image-based disease detection</li>
+                        <li>Support for three plant diseases</li>
+                        <li>User-friendly interface</li>
+                    </ul>
+                    <p><strong>Technologies used:</strong> Python, TensorFlow, Keras</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/AriyaArKa">View on GitHub</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 5 -->
+    <div class="modal fade" id="project5Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bookstore Inventory Manager</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/random/800x500/?bookstore" class="img-fluid mb-4" alt="Bookstore App">
+                    <p>A C#-based Windows Forms app for managing bookstore inventory with a SQL Server backend.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Add, view, and print book records</li>
+                        <li>Input validation and auto-generated book IDs</li>
+                        <li>Printable reports sorted by title</li>
+                    </ul>
+                    <p><strong>Technologies used:</strong> C#, Windows Forms, .NET Framework, SQL Server, ADO.NET</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 6 -->
+    <div class="modal fade" id="project6Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hackathon Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://source.unsplash.com/random/800x500/?poster" class="img-fluid mb-4" alt="Hackathon Poster">
+                    <p>A visually appealing poster created for an annual university hackathon using Adobe Illustrator.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Modern and engaging design</li>
+                        <li>Event-specific branding</li>
+                        <li>Optimized for print and digital use</li>
+                    </ul>
+                    <p><strong>Tools used:</strong> Adobe Illustrator</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2025 Arka Braja Prasad Nath. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/AriyaArKa" class="text-white me-2"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arka-nath55/" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.kaggle.com/arkaariya" class="text-white"><i class="fab fa-kaggle"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
